@@ -391,3 +391,71 @@ footer {
 .info-contacto a:hover {
   text-decoration: underline;
 }
+
+/* RESPONSIVA */
+
+/* Responsive general para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1rem;
+  }
+
+  .contenido-contacto {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .imagen-contacto,
+  .info-contacto {
+    flex: 1 1 100%;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .info-contacto {
+    text-align: center;
+  }
+
+  .info-contacto a {
+    display: block;
+    margin: 0.25rem 0;
+  }
+}
