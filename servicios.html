@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Parker Pics</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h1>Servicios</h1>
+    <nav class="submenu-servicios">
+  <ul>
+    <li><a href="#fotografia">Fotografía</a></li>
+    <li><a href="#polaroid">Polaroids</a></li>
+    <li><a href="#productos">Productos</a></li>
+  </ul>
+</nav>
+    <br>
+    <section id="fotografia">
+    <div class="servicio-contenido">
+        <img src="img/serviciofotos.jpg" alt="Equipo fotográfico">
+            <div class="descripcion">
+                <h2>Servicio de Fotografía</h2>
+                <p>El servicio de fotografía es el servicio básico proporcionado, consta de una sesión de 1:00 hora a 1:30 de fotografía digital, incluye:</p>
+                <ul>
+                    <li>Todas las fotografías de la sesión</li>
+                    <li>25 Fotografías editadas</li>
+                    <li>1 o 2 cambios durante la sesión</li>
+                </ul>
+            </div>
+    </div>
+    </section>
+    <section id="polaroid">
+    <div class="servicio-contenido">
+        <img src="img/serviciopolaroid.jpg" alt="Equipo fotográfico">
+            <div class="descripcion">
+                <h2>Impresion fotos Polaroid</h2>
+                <p>El servicio de impresion de fotos polaroid es una gran opcion cuando de dar un detalle se trata. Con una excelente calidad y variantes estilos, estas fotos son una forma de llevar un recuerdo a todos lados. El servicio uncluye: </p>
+                <ul>
+                    <li>Impresion de fotografias individuales.</li>
+                    <li>Edicion con stiiers, texto y marcos.</li>
+                    <li>Impresion sobre hojas decoradas.</li>
+                </ul>
+            </div>
+    </div>
+    </section>
+
+    <section id="productos">
+  <h2>Venta de Productos</h2>
+  <div class="galeria-productos">
+    <div class="producto" onclick="mostrarModal('img/productos/canon50.jpg', 'Lente Canon 50mm f/1.8 - Ideal para retratos con fondo desenfocado')">
+      <img src="img/productos/canon50.jpg" alt="Lente Canon 50mm">
+      <p>Lente Canon 50mm</p>
+    </div>
+    <div class="producto" onclick="mostrarModal('img/productos/canont5.jpg', 'Cámara Canon SL2 - Perfecta para principiantes y creadores de contenido')">
+      <img src="img/productos/canont5.jpg" alt="Cámara Canon T5">
+      <p>Cámara Canon SL2</p>
+    </div>
+    <!-- Agrega más productos aquí -->
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Parker Pics. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script2.js"></script>
+  <div id="modal" class="modal">
+  <span class="cerrar" onclick="cerrarModal()">&times;</span>
+  <img class="modal-contenido" id="imgModal" />
+  <div id="descripcionModal" class="descripcion-modal"></div>
+</div>
+
+</body>
+</html>
