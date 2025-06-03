@@ -157,6 +157,29 @@ footer {
   transition: transform 0.3s ease;
 }
 
+/* FILTROS PORTAFOLIO */
+.filtros {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filtros button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filtros button.activo,
+.filtros button:hover {
+  background-color: #555;
+}
+
+
 .galeria img:hover {
   transform: scale(1.03);
 }

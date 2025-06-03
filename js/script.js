@@ -24,3 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const botones = document.querySelectorAll(".filtros button");
+  const imagenes = document.querySelectorAll(".galeria img");
+
+  botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+      // Marcar como activo
+      botones.forEach(b => b.classList.remove("activo"));
+      boton.classList.add("activo");
+
+      const filtro = boton.getAttribute("data-filtro");
+
+      imagenes.forEach(img => {
+        if (filtro === "todos" || img.classList.contains(filtro)) {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      });
+    });
+  });
+});
