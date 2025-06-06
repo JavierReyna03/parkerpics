@@ -46,3 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("toggle-menu");
+  const menu = document.getElementById("menu");
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+});

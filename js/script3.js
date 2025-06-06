@@ -17,3 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const edad = calcularEdad(fechaNacimiento);
   document.getElementById("edad").textContent = edad;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("toggle-menu");
+  const menu = document.getElementById("menu");
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+});
